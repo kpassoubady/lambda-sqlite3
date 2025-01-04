@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build-aws-lambda-fn": "zip -r lambda-function.zip index.mjs",
+    "build-aws-lambda-layer": "zip -r lambda-layer.zip node_modules"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.722.0",
+    "@aws-sdk/client-sfn": "^3.721.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}
